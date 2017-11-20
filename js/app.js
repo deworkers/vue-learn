@@ -1,7 +1,8 @@
 
-var apiURL = 'http://www.json-generator.com/api/json/get/cqTiirHeKW?indent=2';
+var apiURL = 'https://api.vk.com/method/users.get?user_ids=23432521&fields=bdate&v=5.68';
 
 const home = { template: '' }
+
 
 
 Vue.component('list-elem', {
@@ -30,7 +31,5 @@ var apiList = new Vue({
             });
         }
     }
-
-
 
 });
