@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script  src="http://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div id="price">
+        <p>1 BTC to 1 RUB - {{ price }}</p>
+    </div>
+
+    <div id="calc">
+        <input type="text" v-model="quant">
+        <p>{{ quant }} BTC = {{ result }} RUB</p>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/vue-router.js"></script>
+    <script type="text/javascript" src="js/btc.js"></script>
+</body>
+</html>
